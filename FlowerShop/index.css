@@ -4,6 +4,7 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
+    transition: 0.4s;
 }
 
 
@@ -12,7 +13,7 @@
 }
 
 :root {
-    --roboto: "Roboto", sans-seri;
+    --roboto: "Roboto", sans-serif;
 }
 
 
@@ -23,12 +24,26 @@
 }
 
 
+
+
+
 /* ================= STARTED STYLES OF header SECTION =================  */
 header {
     width: 100%;
     height: 51.86px;
     display: flex;
     align-items: center;
+    background-color: #fff;
+}
+
+header .container {
+    width: 1160px;
+}
+
+header .container .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-border__bottom {
@@ -38,26 +53,12 @@ header {
     margin: 0 auto;
     display: none;
 }
-
-header .header {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .header_border {
     width: 90%;
     height: 2px;
     background-color: #e6e6eb;
     margin: 0 auto;
     display: none;
-}
-
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .headers__location {
@@ -84,13 +85,10 @@ header .container {
     text-align: left;
 }
 
-.meniButton {
-    width: auto;
-    height: auto;
+.menyuButton {
     display: none;
 }
-
-.meniButton .line {
+.menyuButton .line {
     width: 24px;
     height: 3px;
     margin-top: 4px;
@@ -122,7 +120,6 @@ header .container {
 
 
 
-
 /* ================= STARTED STYLES OF NAV SECTION =================  */
 nav {
     width: 100%;
@@ -146,13 +143,11 @@ nav ul li a {
     letter-spacing: 0;
     color: rgba(0, 0, 0, 1);
 }
-
 /* ================= /ENDED STYLES OF NAV SECTION =================  */
 
 
 
 /* ================= STARTED STYLES OF INTO__MAIN-SECTION  =================  */
-
 .intro__main-section {
     width: 100%;
     height: auto;
@@ -231,6 +226,7 @@ h5 {
     margin-left: 9px;
 }
 /* ================= ENDED STYLES OF INTO__MAIN-SECTION  =================  */
+
 
 
 
@@ -357,6 +353,7 @@ h5 {
 
 
 
+
 /* =================  /startED STYLES OF second MAIN SECTION =================  */
 .second-main__section {
     width: 100%;
@@ -410,6 +407,7 @@ h5 {
     letter-spacing: 0;
     text-align: center;
     margin-top: 14px;
+    color: rgba(0, 0, 0, 1);
 }
 
 .cardn1 .del {
@@ -428,6 +426,7 @@ h5 {
     text-align: left;
     margin-right: 10px;
 }
+
 .cardn1 .del p {
     font-family: var(--inter);
     font-size: 14px;
@@ -448,6 +447,7 @@ h5 {
     letter-spacing: 0;
     text-align: center;
     margin-top: 14px;
+    color: rgba(0, 0, 0, 1);
 }
 
 .cardn2 h6 {
@@ -458,8 +458,8 @@ h5 {
     letter-spacing: 0;
     text-align: center;
     margin-top: 12px;
+    color: rgba(0, 0, 0, 1);
 }
-
 
 .cardn3 h4 {
     font-family: var(--inter);
@@ -469,6 +469,7 @@ h5 {
     letter-spacing: 0;
     text-align: center;
     margin-top: 14px;
+    color: rgba(0, 0, 0, 1);
 }
 
 .cardn3 h6 {
@@ -479,6 +480,7 @@ h5 {
     letter-spacing: 0;
     text-align: center;
     margin-top: 12px;
+    color: rgba(0, 0, 0, 1);
 }
 
 .cardn4 h4 {
@@ -489,7 +491,9 @@ h5 {
     letter-spacing: 0;
     text-align: center;
     margin-top: 14px;
+    color: rgba(0, 0, 0, 1);
 }
+
 .cardn4 h6 {
     font-family: var(--inter);
     font-size: 14px;
@@ -498,12 +502,19 @@ h5 {
     letter-spacing: 0;
     text-align: center;
     margin-top: 12px;
+    color: rgba(0, 0, 0, 1);
 }
 
 .intro-main__section-seeMore {
     display: none;
 }
+
+.second-main__section img:hover {
+    scale: 1.01;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.268);
+}
 /* =================  /ENDED STYLES OF second MAIN SECTION =================  */
+
 
 
 
@@ -651,14 +662,20 @@ h5 {
 .intro-main2__section-seeMore {
     display: none;
 }
+
+.third-main__section img:hover {
+    scale: 1.01;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.268);
+}
 /* =================  /ENDED STYLES OF THIRD MAIN SECTION =================  */
+
 
 
 
 /* ================= STARTED STYLES OF FOOTER =================  */
 footer {
     width: 100%;
-    height: 356px;
+    height: auto;
     background-color: #f9f9fb;
     position: absolute;
     margin-top: 80px;
@@ -785,19 +802,22 @@ footer a {
 }
 
 footer .copyright {
+    height: 36px;
+    display: flex;
+    align-items: center;
     color: rgba(175, 177, 189, 1);
     font-family: var(--inter);
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0;
-    text-align: left;
-    margin-top: 12px;
 }
-footer .foter-items a:hover{
+footer .foter-items a:hover {
     text-decoration: underline;
 }
 /* ================= ENDED STYLES OF FOOTER =================  */
+
+
 
 
 
@@ -808,27 +828,37 @@ footer .foter-items a:hover{
 @media only screen and (max-width: 1200px) {
 
     /* header styles started */
-    .headers__location{
+    .headers__location {
         margin-left: 24px;
     }
-    .headers__searchandshop{
+    .headers__searchandshop {
         margin-right: 24px;
-    }
-    
+    };
     /* header styles ended */
 }
 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-    .headers__location{
+  
+    /* HEADER STARTED */
+    .headers__location {
         margin-left: 24px;
     }
-    .headers__searchandshop{
+    .headers__searchandshop {
         margin-right: 24px;
     }
-    
+    /* HEADER ENDED */
 
+    /* intro-main__section STARTED */
+     .intro-main__section .card {
+        width: auto;
+        height: 220px;
+      } 
+        /* intro-main__section ENDED */
+
+        
+    /* first-main__section STARTED */
     .first-main__section .first-main__section-cards {
         width: 100%;
         height: auto;
@@ -849,11 +879,9 @@ footer .foter-items a:hover{
         margin-left: 24px;
         width: auto;
     }
+    /* first-main__section ENDED */
 
-    .intro-main__section .card {
-        width: auto;
-        height: 220px;
-    }
+
 
     .second-main__section {
         padding: 0 24px;
@@ -871,6 +899,7 @@ footer .foter-items a:hover{
         display: none;
     }
 }
+
 
 
 
@@ -897,8 +926,9 @@ footer .foter-items a:hover{
         display: none;
     }
 
-    .meniButton {
+    .menyuButton {
         display: block;
+        background-color: #fff;
     }
     /* header styles ended */
 
@@ -951,7 +981,7 @@ footer .foter-items a:hover{
         border-radius: 5px;
         margin-top: 24px;
         margin-left: -40px;
-        background-color:#595cff;
+        background-color: #595cff;
     }
 
     .infos-card1 h3 {
@@ -1056,7 +1086,6 @@ footer .foter-items a:hover{
         border-radius: 4px;
     }
 
-
     .intro-main__section-seeMore {
         width: 100%;
         height: auto;
@@ -1082,7 +1111,6 @@ footer .foter-items a:hover{
         font-weight: 500;
     }
     /* -----SECOND MAIN SECTION END----- */
-
 
 
     /* -----third MAIN SECTION start----- */
@@ -1151,6 +1179,7 @@ footer .foter-items a:hover{
     footer {
         width: 100%;
         height: auto;
+        padding: 0;
     }
     footer .foter-items {
         width: 100%;
@@ -1164,7 +1193,7 @@ footer .foter-items a:hover{
     .foter-item2,
     .foter-item3,
     .foter-item4 {
-        width: 140px;
+        width:auto;
         height: auto;
         margin-left: 6px;
     }
@@ -1180,11 +1209,6 @@ footer .foter-items a:hover{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
-
-
-    footer {
-        padding: 0;
     }
 
 
@@ -1218,10 +1242,9 @@ footer .foter-items a:hover{
 
 
 /* Extra small devices (phones, 460px and down) */
-@media only screen and (max-width: 460px) {
-    .foter-item4 {
-        margin-top: 6px;
-    }
+@media only screen and (max-width: 400px) {
+  
+
     .intro__main-sectionCard1 img {
         width: auto;
         height: 100%;
@@ -1242,4 +1265,13 @@ footer .foter-items a:hover{
         margin-bottom: 16px;
         margin-right: 12px;
     }
+    .foter-item3{
+        margin-left: 36px;
+    }
 }
+
+
+
+
+
+
